@@ -1,0 +1,137 @@
+@media screen and (max-width:700px) {
+    header{
+        height: 92%;
+       
+    }
+    nav {
+        //    visibility: hidden;
+        .menu-nav{
+            position: absolute;
+            width: 50%;
+            height: 92vh;
+            top: 8vh;
+            right: 0;
+            background: #c42525;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            transform: translateX(100%);
+            transition: transfrom 0.5s ease-in;
+            z-index: 1;
+           
+            
+        }
+        .menu-nav-item{
+            // position: absolute;
+            opacity: 1;
+            // right: 0 !important;
+
+            margin: 2rem 0;
+            
+      
+            
+        }
+        .menu-nav-item:last-child{
+            display: none;
+        }
+        .burger{
+            position: absolute;
+            top: 5vh;
+            right: 10%;
+            display: block !important;
+            cursor: pointer;
+            
+        }  
+    }
+    .top-nav{
+
+       
+    }
+
+    .text-head {
+        width: 80%;
+        height: auto;
+        position: relative;
+        display: block;
+        margin: auto !important;
+        margin-top: 10rem !important;
+        text-align: center;
+        padding: auto !important;
+        margin-bottom: 10rem !important;
+        // background: rgb(67, 175, 99);
+        // z-index: 1;
+
+
+    }
+    .features-grid{
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    }
+    .form {
+        position: relative !important;
+        float: inherit !important;
+        margin: auto !important;
+        // margin-top: 10rem !important;
+        
+        width: 400px !important;
+    }
+
+    .content1 {
+
+        .text-content {
+            width: 100%;
+        }
+    }
+
+    .features {
+
+        .text-content {
+            width: 100%;
+        }
+
+    }
+
+    .fun {
+
+        .text-content {
+            width: 100%;
+        }
+
+        .counter {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    .contact {
+
+        button {
+            font-size: 1.7rem !important;
+
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: auto;
+
+        .about {
+            width: 100%;
+        }
+
+        .link {
+            margin-bottom: 2rem;
+        }
+    }
+    body{
+        overflow-x: hidden!important ;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+}   

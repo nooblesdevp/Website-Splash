@@ -1,0 +1,33 @@
+@import 'config';
+@import 'home';
+@import 'content1';
+// @import 'responsive';
+@import 'mobile';
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-y: scroll;
+}
+body{
+    background:white;
+    font-family: 'Roboto', sans-serif;
+    color: #fff
+    
+}
+h1,h2,h3{
+    font-weight: 700;
+}
+a{
+    color: white;
+    text-decoration: none !important;
+
+
+    &:hover{
+        color:$primary-color !important;
+    }
+}
+ul{
+    list-style: none;
+}

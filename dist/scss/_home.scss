@@ -1,0 +1,286 @@
+header{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding: 2rem;
+   // overflow: hidden;
+    margin: auto;
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+     url(/dist/img/cover.jpg) center;
+    background-size: cover;
+
+    .top-nav{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    
+    .logo{
+    display: inline-flex;
+    color: #fff;
+    
+    
+    & h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    }
+    
+    nav{
+        float: right;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        // width: 100%;
+        height: 8vh;
+
+     & ul{
+        display: flex;
+       
+     }
+     & ul li{
+         margin-left: 2rem;
+         float: right;
+        
+        
+         & a {
+             color: $secondary-color;
+             transition: 0.4s ease;
+             font-size: 2rem;
+             
+             padding: 8px 30px;
+
+         }
+
+         & a:hover{
+           color: white !important;           
+          background: $primary-color;
+
+             
+         }
+
+         &:last-child{
+            // border-radius: 10px;
+            // padding: 1rem 3rem;
+            // padding: 8px 30px;
+            //  border: 1px solid $secondary-color;
+            
+         }
+         & a.active{
+            background: $primary-color;
+            color: #fff;
+            font-weight: bold;
+
+
+         }
+         
+        //  & a:last-child:hover{
+        //     //  background: $primary-color;
+        //      color: #fff;
+        //      font-weight: bold;
+        //  }
+     }
+     .burger{
+          display: none;
+     }
+     .burger div{
+        width: 30px;
+        height: 5px;
+        background: #fff;
+        margin: 5px;
+        // display: none;
+     }
+    }
+    .text-head{
+        position: relative;
+        margin-top: 20rem;
+        margin-left: 5%;
+       
+        
+
+        & p {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $secondary-color;
+            font-weight: bold;
+            
+            // display: inline-block;
+        }
+        & h1{
+            font-size: 5rem;
+            color: #fff;
+            // margin-top: 1rem;
+             display: inline-block;
+        }
+    }
+    .form{
+        float: right;
+        padding: 40px;
+        background: $icon-color;
+        max-width: 600px;
+        width: 400px;
+        margin-top: -25rem;
+        margin-right: 5%;
+        position: relative;
+        border-radius: 15px;
+        //  position: absolute;
+
+        .tab-group {
+            list-style:none;
+            padding:0;
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+            // padding-left: -20rem;
+                &:after {
+                content: "";
+                left: 0;
+                // float: left;
+                display: table;
+                clear: both;
+            }
+        & li a{
+            display: block;
+            color: $primary-color;
+            // padding: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 50%;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.4s ease;
+    
+                &:hover{
+                    // background: $primary-color;
+                    color: white;
+                }
+        
+            }   
+            .active a{
+                background: $icon-color;
+                color: #fff;
+                // padding: 10px 30px;
+            }    
+        }   
+        .tab-content > div:last-child{
+            display:none ;
+        }
+        label{
+            position: relative;
+            font-size: 1.8rem;
+            transform: translateY(6px);
+            left: 0;
+            color: #fff;
+            transition:  all 0.25s ease;
+            margin-right: 2rem;
+            // margin-bottom: 1rem;
+            -webkit-backface-visibility: none;
+            
+            .req {
+                margin-left:2rem;
+                color:$primary-color;
+            }
+        }
+        label.active {
+            transform:translateY(50px);
+            left:2px;
+            font-size: 1 rem;
+            .req {
+              opacity:0;
+            }
+          }
+         label.highlight {
+            color:#fff;
+        }  
+
+        input, textarea{
+            font-size: 2rem;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 5px 10px;
+            background: white;
+            // border: 1 px solid blue;
+            border: 1px solid $icon-color;
+            outline: none;
+            border-radius: 5px;
+            transition: border-color .25s ease, box-shadow .25s ease;
+            
+            &:focus{
+                outline: 0;
+                color: $primary-color;
+            }
+        }
+        textarea{
+            border: 2px solid $secondary-color;
+            resize: vertical;
+        }
+        .field-wrap{
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        .top-row{
+            &:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            > div{
+                float: left;
+                width: 48%;
+                margin-right: 4%;
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                // display: flex;
+
+            }
+            
+        }
+        .button{
+            border: 0;
+            // padding: 2rem;
+           
+            color: #fff;
+            font-size: 2rem;
+            font-weight: bold;
+            background: $primary-color;
+            border-radius: 5px;
+            display: block;
+            cursor: pointer;
+            transition: .4s ease;
+
+            &:hover, &:focus{
+                background: #e71b25 ;
+            }
+        }
+        .button-block{
+            width: 100%;
+            padding: 5px;
+            margin-top: 2rem;
+           
+        }
+        .forgot{
+            // font-size: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+
+            & a{
+                font-size: 1rem;
+                padding: 1rem;
+            }
+            
+        
+        }
+    }
+   
+    
+    
+}
